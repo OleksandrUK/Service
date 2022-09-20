@@ -1,0 +1,66 @@
+html {
+    background-color: #0e7a66;
+    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: "Rhodium Libre", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+p,
+li {
+    font-size: 15px;
+    line-height:1;
+    letter-spacing: 1px;
+}
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #7fcbf4;
+    padding: 0 20px 20px 20px;
+    border: 4px solid rgb(1, 2, 2);
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #0e7a66;
+    text-shadow: 10px 10px 10px rgb(49, 125, 196);
+  }
+img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #b51010;
+}
+button {
+    --b: 6px;   /* border thickness */
+    --s: .15em; /* size of the corner */
+    --c: #BD5532;
+    
+    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid rgba(37, 194, 92, 0);
+    outline-offset: .2em;
+  }
+  button:hover,
+  button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+  }
+  button:active {
+    background: var(--c);
+    color: rgb(72, 201, 36);
+  }
+  button {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 10rem;
+    cursor: pointer;
+    border: none;
+    margin: .05em;
+  }
